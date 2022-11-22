@@ -18,36 +18,43 @@ a:visited{
 h2 {
     font-size: medium;
 }
+/* Max-width on the main image. */
 img{
     max-width: 400px;
 }
-.cup {
+/* Padding for the main image on every page. */
+.content {
+    padding: 10px;
+}
+/* The following two classes are used for the cup item. 
+The first to not displau the cup, and the second to show it when we get a value and a key.*/
+.cupHidden {
     display: none;
 }
-
 .cupVisible {
     max-Width: 50px;
 }
-.bread {
+/* The following two classes are used for the bread item. 
+The first to not displau the cup, and the second to show it when we get a value and a key.*/
+.breadHidden {
     display: none;
 }
-
 .breadVisible {
     max-width: 50px;
 }
-.cheese {
+/* The following two classes are used for the cheese item. 
+The first to not displau the cup, and the second to show it when we get a value and a key.*/
+.cheeseHidden {
     display: none;
 }
-
 .cheeseVisible {
     max-width: 50px;
 }
+/* Arrow to the left */
 .left {
     max-width: 50px;
 }
+/* Arrow to the right */
 .right {
     max-width: 50px;
-}
-.content {
-    padding: 10px;
 }
