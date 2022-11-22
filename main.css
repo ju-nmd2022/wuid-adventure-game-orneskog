@@ -1,0 +1,53 @@
+body {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+max-width: 560px;
+margin: auto;
+}
+a {
+    color: black;
+    font-weight:bolder;
+    font-size:xx-large;
+}
+a:hover {
+    color: cadetblue;
+}
+a:visited{
+    color: black;
+}
+h2 {
+    font-size: medium;
+}
+img{
+    max-width: 400px;
+}
+.cup {
+    display: none;
+}
+
+.cupVisible {
+    max-Width: 50px;
+}
+.bread {
+    display: none;
+}
+
+.breadVisible {
+    max-width: 50px;
+}
+.cheese {
+    display: none;
+}
+
+.cheeseVisible {
+    max-width: 50px;
+}
+.left {
+    max-width: 50px;
+}
+.right {
+    max-width: 50px;
+}
+.content {
+    padding: 10px;
+}
