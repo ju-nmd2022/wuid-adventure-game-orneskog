@@ -1,8 +1,9 @@
 body {
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-text-align: center;
-max-width: 560px;
-margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    max-width: 560px;
+    margin: auto;
+    background-color: bisque;
 }
 a {
     color: black;
@@ -56,5 +57,11 @@ The first to not displau the cup, and the second to show it when we get a value 
 }
 /* Arrow to the right */
 .right {
+    max-width: 50px;
+}
+.winHidden {
+    max-width: 50px;
+}
+.win {
     max-width: 50px;
 }

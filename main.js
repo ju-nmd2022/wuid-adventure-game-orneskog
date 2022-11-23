@@ -21,7 +21,8 @@ window.onload = function() {
      let fridge = document.getElementById("fridge");
      let kitchen = document.getElementById("kitchen");
     updateCollectedItems();
- 
+    let winRandom = Math.floor(Math.random() * 2);
+    console.log(winRandom);
     //Adds a key ("coffee") and a value ("true") in the sessionStorage and there by the updateCollectedItems to show the cup icon on the top.
     //if is in the beginning added to only use Listener if we have an id called "coffee". This to not get errors in the code.
 if(coffee){
@@ -64,7 +65,11 @@ if(fridge){
     //if is in the beginning added to only use Listener if we have an id called "win". This to not get errors in the code.
 if(win){
     win.addEventListener("click", function () {
-        if (sessionStorage.getItem("coffee") && sessionStorage.getItem("bread") && sessionStorage.getItem("cheese")){ 
+        if (winRandom === 0){
+            alert ("You dropped your breakfast. Hurry up and make new breakfast or you'll be late for school!")
+            sessionStorage.clear();
+        }
+        else if (sessionStorage.getItem("coffee") && sessionStorage.getItem("bread") && sessionStorage.getItem("cheese")){ 
             alert("🏅🎉You got your breakfast and your coffee! Time to head to Garrit's lecture!🎉")
         }
         else{
