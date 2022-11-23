@@ -60,18 +60,20 @@ if(fridge){
                 }
     });
 }
-    //If we have a value on "coffee", "bread" & "cheese" you get an alert winning message. 
-    //If you don't have values on all three of these, you get an alert that you have to get them first.
     //if is in the beginning added to only use Listener if we have an id called "win". This to not get errors in the code.
 if(win){
     win.addEventListener("click", function () {
+            //If mathRandom has the value 0 you get an alert message that you dropped your breakfast. 
+            // If the value is 0 sessionStorage.clear is executed. 
         if (winRandom === 0){
             alert ("You dropped your breakfast. Hurry up and make new breakfast or you'll be late for school!")
             sessionStorage.clear();
         }
+            //If winRandom is another value than 0 and have a value on "coffee", "bread" & "cheese" you get an alert winning message. 
         else if (sessionStorage.getItem("coffee") && sessionStorage.getItem("bread") && sessionStorage.getItem("cheese")){ 
             alert("🏅🎉You got your breakfast and your coffee! Time to head to Garrit's lecture!🎉")
         }
+            //If you don't have values on all three of these above, you get an alert that you have to get them first.
         else{
             alert("You have to get your coffee and your sandwich with cheese before leaving home!")
             }
